@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: var(--blue);
+}
+.navbar{
+    position: fixed;
+    overflow-x: hidden;
+    background-color: var(--blue);
+    height: 3em;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: 4em;
+    align-items: center;
+}
+li:nth-child(1){
+    margin: 0em 0em 0em 2em;
+}
+li:nth-child(2){
+    align-self:flex-end;
+    margin: 0em 0em 0em 0em;
+}
+.nav-icon{
+    height: 3em;
+    width: 3em;
+}
+.nav-contact{
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.2em;
+    border-radius: 0.3em;
+}
+.nav-title{
+    color: var(--white);
+}
+.header{
+    height: auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-color: var(--white);
+    margin-top: 3em;
+}
+.leftside-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+.rightside-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 3em;
+    font-family: 'Rubik', sans-serif;
+}
+.contact-button{
+    margin: 0.8em 0em 0em -8em;    
+}
+.contact-button,.down-arrow{
+    height: 2em;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7em;
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+}
+.image{
+    height: 12em;
+    width: 12em;   
+}
+.down-arrow{
+    margin: 2vh 0vw 1vh 50vw;
+    
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        overflow-x: hidden;
+    }
+    .navbar{
+        grid-template-columns: 80% 20%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftside-header{
+        padding: 4em 4em 0em 4em;
+    }
+    .rightside-header{
+        margin: 2em 0em 2em 0em;
+        padding: 0%;
+    }
+    .down-arrow{
+        margin: 2vh 0vw 1vh 40vw;
+    }
+}
